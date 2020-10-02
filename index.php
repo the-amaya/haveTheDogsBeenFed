@@ -28,19 +28,19 @@
 		<tr>
 			<td id="leftcell">Svedka</td>
 			<td id="middlecell">(read last time fed from database using php)</td>
-			<td id="rightcell">(button to record a feeding)</td>
+			<td id="rightcell"><form action="writedb.php"><button type="submit" formmethod="post" id=1>update feed time</button></form></td>
 		</tr>
 		<tr>
 			<td id="leftcell">Sangria</td>
 			<td id="middlecell">(read last time fed from database using php)</td>
-			<td id="rightcell">(button to record a feeding)</td>
+			<td id="rightcell"><form action="writedb.php"><button type="submit" formmethod="post" id=2>update feed time</button></form></td>
 		</tr>
 		<tr>
 			<td id="leftcell">Islay</td>
 			<td id="middlecell">(read last time fed from database using php)</td>
-			<td id="rightcell">(button to record a feeding)</td>
+			<td id="rightcell"><form action="writedb.php"><button type="submit" formmethod="post" id=3>update feed time</button></form></td>
 		</tr>
 	</table>
 </body>
 
-<script src="/night.js"></script>
+<script src="night.js"></script>
