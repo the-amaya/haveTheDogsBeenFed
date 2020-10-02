@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "INSERT INTO dogs (id, time) VALUES ('" . $id . "', '" . time() . "'";
+$sql = "INSERT INTO dogs (id) VALUES ('" . $id . "')";
 if ($conn->query($sql) === TRUE) {
   header("Location: index.php");
 } else {

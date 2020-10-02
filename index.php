@@ -28,17 +28,32 @@
 		<tr>
 			<td id="leftcell">Svedka</td>
 			<td id="middlecell">(read last time fed from database using php)</td>
-			<td id="rightcell"><form action="writedb.php"><button type="submit" formmethod="post" id=1>update feed time</button></form></td>
+			<td id="rightcell">
+				<form action="writedb.php" method="post">
+					<input id="id" type="hidden" name="id" value="1">
+					<input id="submit" type="submit" name="submit" value="update feed time" >
+				</form>
+			</td>
 		</tr>
 		<tr>
 			<td id="leftcell">Sangria</td>
 			<td id="middlecell">(read last time fed from database using php)</td>
-			<td id="rightcell"><form action="writedb.php"><button type="submit" formmethod="post" id=2>update feed time</button></form></td>
+			<td id="rightcell">
+				<form action="writedb.php" method="post">
+					<input id="id" type="hidden" name="id" value="2">
+					<input id="submit" type="submit" name="submit" value="update feed time" >
+				</form>
+			</td>
 		</tr>
 		<tr>
 			<td id="leftcell">Islay</td>
 			<td id="middlecell">(read last time fed from database using php)</td>
-			<td id="rightcell"><form action="writedb.php"><button type="submit" formmethod="post" id=3>update feed time</button></form></td>
+			<td id="rightcell">
+				<form action="writedb.php" method="post">
+					<input id="id" type="hidden" name="id" value="3">
+					<input id="submit" type="submit" name="submit" value="update feed time" >
+				</form>
+			</td>
 		</tr>
 	</table>
 </body>

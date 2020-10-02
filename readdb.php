@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 
 $jsonarray = [];
 foreach ($rooms as $room) {
-	$sql = "SELECT time,id FROM dogs WHERE `id`='" . $room . "' ORDER BY `samplenumber` DESC LIMIT 1;";
+	$sql = "SELECT id,time FROM dogs WHERE `id`='" . $room . "' ORDER BY `key` DESC LIMIT 1;";
 	$result = $conn->query($sql);
 	$row = $result->fetch_assoc();
 	$time = $row["time"];
@@ -24,7 +24,7 @@ foreach ($rooms as $room) {
 	$sarray = [$id, $time];
 	array_push($jsonarray, $sarray);
 	}
-}
+
 
 //print_r($jsonarray);
 print json_encode($jsonarray);
