@@ -22,7 +22,7 @@
 </div>
 
 <body>
-	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<table width="100%" height="60%" border="0" cellpadding="0" cellspacing="0">
 		<tr>
 			<th></th>
 			<th>Time Since Last Fed</th>

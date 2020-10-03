@@ -26,4 +26,8 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+
+$cmd = "cgi-bin/webhook.py $id";
+exec($cmd . " > /dev/null &");
+
 ?>
