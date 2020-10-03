@@ -4,9 +4,11 @@ import sys
 import time
 import requests
 import json
+from datetime import datetime
 
 dog = (sys.argv[1])
-time = time.now()
+now = datetime.now()
+now = now.strftime("%H:%M:%S")
 if dog == '1':
 	dog = "Svedka"
 elif dog == '2':
@@ -16,7 +18,7 @@ elif dog == '3':
 else:
 	sys.exit()
 
-message = ('%s has been fed at %s' % dog, time)
+message = ('%s has been fed at %s' % (dog, now))
 
 def discordhook(a):
 	data = {}
@@ -32,4 +34,4 @@ def discordhook(a):
 		pass
 
 
-discordhook()
+discordhook(message)
