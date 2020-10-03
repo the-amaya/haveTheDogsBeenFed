@@ -33,15 +33,29 @@ div img {
 
 #leftcell
 {
-    width:auto;
+	width:auto;
+	height:auto;
+	font-size: 30px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
 }
 #middlecell
 {
-    width:auto;
+	width:auto;
+	height:auto;
 }
 #rightcell
 {
-    width:auto;
+	width:auto;
+	height:auto;
+}
+
+#submit
+{
+	border-radius: 8px;
+	padding: 32px 16px;
+	background-color: #402323;
+	color: #a68e84;
 }
 
 .countup {

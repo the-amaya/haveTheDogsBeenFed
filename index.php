@@ -22,7 +22,7 @@
 </div>
 
 <body>
-	<table width="100%" height="60%" border="0" cellpadding="0" cellspacing="0">
+	<table width="95%" height="60%" border="0" cellpadding="10" cellspacing="0">
 		<tr>
 			<th></th>
 			<th>Time Since Last Fed</th>
@@ -102,7 +102,7 @@
 					async: false
 				}).responseText;
 				jsonData = JSON.parse(jsonData);
-				console.log(jsonData);
+				//console.log(jsonData);
 				data1 = jsonData[0]["time"];
 				data2 = jsonData[1]["time"];
 				data3 = jsonData[2]["time"];
